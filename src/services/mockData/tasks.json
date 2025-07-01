@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "title": "Complete project proposal",
+    "description": "Finish the Q4 project proposal for the marketing campaign including budget allocation and timeline",
+    "categoryId": 1,
+    "priority": "high",
+    "dueDate": "2024-01-15",
+    "completed": false,
+    "createdAt": "2024-01-10T09:00:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 2,
+    "title": "Review team performance",
+    "description": "Conduct quarterly performance reviews for all team members",
+    "categoryId": 1,
+    "priority": "medium",
+    "dueDate": "2024-01-20",
+    "completed": false,
+    "createdAt": "2024-01-08T14:30:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 3,
+    "title": "Buy groceries",
+    "description": "Get milk, bread, eggs, and vegetables for the week",
+    "categoryId": 2,
+    "priority": "low",
+    "dueDate": "2024-01-12",
+    "completed": true,
+    "createdAt": "2024-01-09T10:15:00Z",
+    "completedAt": "2024-01-11T16:45:00Z"
+  },
+  {
+    "Id": 4,
+    "title": "Schedule doctor appointment",
+    "description": "Book annual checkup with Dr. Smith",
+    "categoryId": 3,
+    "priority": "medium",
+    "dueDate": "2024-01-18",
+    "completed": false,
+    "createdAt": "2024-01-07T11:20:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 5,
+    "title": "Learn React hooks",
+    "description": "Complete the React hooks tutorial and practice with useEffect and useState",
+    "categoryId": 4,
+    "priority": "medium",
+    "dueDate": null,
+    "completed": false,
+    "createdAt": "2024-01-05T13:45:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 6,
+    "title": "Plan weekend trip",
+    "description": "Research destinations and book accommodation for the upcoming weekend getaway",
+    "categoryId": 2,
+    "priority": "low",
+    "dueDate": "2024-01-16",
+    "completed": false,
+    "createdAt": "2024-01-09T08:30:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 7,
+    "title": "Update LinkedIn profile",
+    "description": "Add recent work experience and skills to LinkedIn profile",
+    "categoryId": 1,
+    "priority": "low",
+    "dueDate": null,
+    "completed": true,
+    "createdAt": "2024-01-06T15:20:00Z",
+    "completedAt": "2024-01-10T12:30:00Z"
+  },
+  {
+    "Id": 8,
+    "title": "Prepare presentation slides",
+    "description": "Create slides for the upcoming client meeting on project status",
+    "categoryId": 1,
+    "priority": "high",
+    "dueDate": "2024-01-14",
+    "completed": false,
+    "createdAt": "2024-01-11T09:15:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 9,
+    "title": "Call mom",
+    "description": "Weekly check-in call with mom to catch up",
+    "categoryId": 2,
+    "priority": "medium",
+    "dueDate": "2024-01-13",
+    "completed": false,
+    "createdAt": "2024-01-08T17:00:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 10,
+    "title": "Practice JavaScript algorithms",
+    "description": "Solve 5 coding problems on LeetCode focusing on array manipulation",
+    "categoryId": 4,
+    "priority": "medium",
+    "dueDate": "2024-01-17",
+    "completed": false,
+    "createdAt": "2024-01-09T19:45:00Z",
+    "completedAt": null
+  }
+]

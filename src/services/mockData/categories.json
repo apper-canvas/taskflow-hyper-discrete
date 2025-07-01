@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "name": "Work",
+    "color": "#5B47E0",
+    "icon": "Briefcase",
+    "taskCount": 4
+  },
+  {
+    "Id": 2,
+    "name": "Personal",
+    "color": "#FF6B6B",
+    "icon": "User",
+    "taskCount": 3
+  },
+  {
+    "Id": 3,
+    "name": "Health",
+    "color": "#4ECB71",
+    "icon": "Heart",
+    "taskCount": 1
+  },
+  {
+    "Id": 4,
+    "name": "Learning",
+    "color": "#FFB020",
+    "icon": "BookOpen",
+    "taskCount": 2
+  },
+  {
+    "Id": 5,
+    "name": "Finance",
+    "color": "#00A8FF",
+    "icon": "DollarSign",
+    "taskCount": 0
+  },
+  {
+    "Id": 6,
+    "name": "Shopping",
+    "color": "#8B7FFF",
+    "icon": "ShoppingCart",
+    "taskCount": 0
+  }
+]
