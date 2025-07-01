@@ -83,14 +83,14 @@ const TaskDashboard = () => {
         animate={{ y: 0, opacity: 1 }}
         className="space-y-6"
       >
-        {/* Page Header */}
+{/* Page Header */}
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
               {getFilterTitle()}
             </h1>
             <p className="text-gray-600">
-              {searchQuery ? `Searching for "${searchQuery}"` : 'Manage your tasks efficiently'}
+              {searchQuery ? `Searching for "${searchQuery}"` : 'Organize your thoughts and tasks'}
             </p>
             {selectedCategory && (
               <div className="flex items-center space-x-2 mt-2">

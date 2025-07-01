@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { toast } from 'react-toastify'
-import TaskCard from '@/components/molecules/TaskCard'
-import Loading from '@/components/ui/Loading'
-import Error from '@/components/ui/Error'
-import Empty from '@/components/ui/Empty'
-import TaskModal from '@/components/organisms/TaskModal'
-import { taskService } from '@/services/api/taskService'
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { toast } from "react-toastify";
+import Masonry from "react-masonry-css";
+import TaskModal from "@/components/organisms/TaskModal";
+import TaskCard from "@/components/molecules/TaskCard";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
+import { taskService } from "@/services/api/taskService";
 
 const TaskList = ({ 
   searchQuery = '', 
@@ -163,23 +164,40 @@ const TaskList = ({
       />
     )
   }
+const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+  }
 
   return (
     <div className={className}>
       <AnimatePresence mode="popLayout">
-        <div className="space-y-3">
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="flex w-auto -ml-4"
+          columnClassName="pl-4 bg-clip-padding"
+        >
           {sortedTasks.map((task) => (
-            <TaskCard
+            <motion.div
               key={task.Id}
-              task={task}
-              onToggleComplete={handleToggleComplete}
-              onEdit={handleEditTask}
-              onDelete={handleDeleteTask}
-            />
+              layout
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              className="mb-4"
+            >
+              <TaskCard
+                task={task}
+                onToggleComplete={handleToggleComplete}
+                onEdit={handleEditTask}
+                onDelete={handleDeleteTask}
+              />
+            </motion.div>
           ))}
-        </div>
+        </Masonry>
       </AnimatePresence>
-
       <TaskModal
         isOpen={isModalOpen}
         onClose={() => {
