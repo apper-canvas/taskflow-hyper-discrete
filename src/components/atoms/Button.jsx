@@ -12,10 +12,10 @@ const Button = ({
 }) => {
   const baseClasses = "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-95"
   
-  const variants = {
-    primary: "bg-gradient-to-r from-primary to-secondary text-white shadow-lg hover:shadow-xl focus:ring-primary",
-    secondary: "bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white focus:ring-primary",
-    danger: "bg-gradient-to-r from-error to-red-600 text-white shadow-lg hover:shadow-xl focus:ring-error",
+const variants = {
+    primary: "bg-primary text-white shadow-sm hover:bg-blue-700 focus:ring-primary",
+    secondary: "bg-white text-primary border border-gray-300 hover:bg-gray-50 focus:ring-primary",
+    danger: "bg-error text-white shadow-sm hover:bg-red-700 focus:ring-error",
     ghost: "text-gray-600 hover:text-primary hover:bg-gray-50 focus:ring-gray-300"
   }
   

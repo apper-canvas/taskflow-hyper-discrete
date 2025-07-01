@@ -19,8 +19,8 @@ const handleAddTask = () => {
     // This will be handled by the child components
     window.dispatchEvent(new window.CustomEvent('openTaskModal'))
   }
-  return (
-    <div className="min-h-screen bg-background flex">
+return (
+    <div className="min-h-screen bg-gray-50 flex">
       {/* Desktop Sidebar */}
       <div className="hidden lg:block w-80 flex-shrink-0">
         <Sidebar

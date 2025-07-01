@@ -4,9 +4,9 @@ import Layout from '@/components/organisms/Layout'
 import TaskDashboard from '@/components/pages/TaskDashboard'
 
 function App() {
-  return (
+return (
     <Router>
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-gray-50">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<TaskDashboard />} />

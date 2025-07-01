@@ -47,11 +47,11 @@ const Header = ({
   const taskCounts = getTaskCounts()
   const progress = getProgress()
 
-  return (
+return (
     <motion.header
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className={`bg-white shadow-sm border-b border-gray-200 ${className}`}
+      className={`bg-white border-b border-gray-200 ${className}`}
     >
       <div className="px-6 py-4">
         <div className="flex items-center justify-between">

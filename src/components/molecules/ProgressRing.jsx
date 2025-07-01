@@ -42,10 +42,10 @@ const ProgressRing = ({
           animate={{ strokeDashoffset }}
           transition={{ duration: 1, ease: "easeOut" }}
         />
-        <defs>
+<defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#5B47E0" />
-            <stop offset="100%" stopColor="#8B7FFF" />
+            <stop offset="0%" stopColor="#2563eb" />
+            <stop offset="100%" stopColor="#2563eb" />
           </linearGradient>
         </defs>
       </svg>
