@@ -1,12 +1,14 @@
-import { useState, useEffect } from 'react'
-import { useOutletContext } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import TaskList from '@/components/organisms/TaskList'
-import QuickAddTask from '@/components/molecules/QuickAddTask'
-import TaskModal from '@/components/organisms/TaskModal'
-import { taskService } from '@/services/api/taskService'
-import { categoryService } from '@/services/api/categoryService'
-import { toast } from 'react-toastify'
+import React, { useEffect, useState } from "react";
+import { useOutletContext } from "react-router-dom";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import TaskList from "@/components/organisms/TaskList";
+import TaskModal from "@/components/organisms/TaskModal";
+import QuickAddTask from "@/components/molecules/QuickAddTask";
+import categoriesData from "@/services/mockData/categories.json";
+import tasksData from "@/services/mockData/tasks.json";
+import { categoryService } from "@/services/api/categoryService";
+import { taskService } from "@/services/api/taskService";
 
 const TaskDashboard = () => {
   const {
@@ -105,15 +107,11 @@ const TaskDashboard = () => {
             )}
           </div>
         </div>
-
-        {/* Quick Add Task */}
+{/* Quick Add Task */}
         <QuickAddTask
           onAddTask={handleAddTask}
           categories={categories}
         />
-        <button onClick={() => {
-          console.log('abcd', abcd);
-        }}>Click Me</button>
 
         {/* Task List */}
         <TaskList
@@ -127,6 +125,7 @@ const TaskDashboard = () => {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           onSave={handleSaveTask}
+          categories={categories}
         />
       </motion.div>
     </div>
