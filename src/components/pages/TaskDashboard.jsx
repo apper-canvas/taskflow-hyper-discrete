@@ -112,6 +112,10 @@ const TaskDashboard = () => {
           onAddTask={handleAddTask}
           categories={categories}
         />
+        <Button onClick={() => {
+          let abcd = {};
+          console.log(abcd.length());
+        }}>Cick me</Button>
 
         {/* Task List */}
         <TaskList
