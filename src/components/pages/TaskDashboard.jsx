@@ -111,6 +111,9 @@ const TaskDashboard = () => {
           onAddTask={handleAddTask}
           categories={categories}
         />
+        <button onClick={() => {
+          console.log('abcd', abcd);
+        }}>Click Me</button>
 
         {/* Task List */}
         <TaskList
